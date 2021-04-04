@@ -20,6 +20,7 @@
   "homepage": "https://github.com/tylergets/tt-scaper#readme",
   "dependencies": {
     "esm": "^3.2.25",
+    "hasbin": "^1.2.3",
     "mkdirp": "^1.0.4",
     "pretty-ms": "^7.0.1",
     "slugify": "^1.5.0",

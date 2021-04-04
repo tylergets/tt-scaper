@@ -6,6 +6,7 @@ import * as fs from "fs";
 import slugify from "slugify";
 import mkdirp from "mkdirp";
 import youtubedl from "youtube-dl-exec";
+import hasbin from "hasbin";
 
 const startTime = Date.now();
 let snags = 0;
@@ -17,6 +18,16 @@ class TurntableScaper {
     downloads = 0;
 
     async start() {
+
+
+        await new Promise(((resolve, reject) => {
+            hasbin.all(['youtube-dl', 'ffmpeg'], (result) => {
+                if (result) {
+                    resolve();
+                }
+                reject('Missing dependencies');
+            })
+        }))
 
         const loggedEvents = [];
 
