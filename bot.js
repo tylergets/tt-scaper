@@ -64,11 +64,6 @@ class TurntableScaper {
 
             console.log(`New song: ${currentSong.metadata.song} - ${currentSong.metadata.artist}`)
 
-            // const fileName = slugify(`${currentSong.metadata.artist} - ${currentSong.metadata.song}`, {
-            //     replacement: "_",
-            //     strict: true,
-            // }) + '.m4a';
-
             const fileName = `${slugify(currentSong.metadata.artist, {
                 strict: true,
                 replacement: "_"
