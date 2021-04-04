@@ -77,7 +77,9 @@ class TurntableScaper {
                 replacement: "_"
             })}.m4a`;
 
-            const filePath = path.join(__dirname, config.downloadPath || "downloads", roomName, fileName);
+
+            const defaultPath = path.join(__dirname, "downloads");
+            const filePath = path.join(config.downloadPath ? config.downloadPath : defaultPath, roomName, fileName);
 
             const cwd = path.dirname(filePath);
 
