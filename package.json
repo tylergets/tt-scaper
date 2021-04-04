@@ -1,0 +1,29 @@
+{
+  "name": "tt-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergets/tt-scaper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylergets/tt-scaper/issues"
+  },
+  "homepage": "https://github.com/tylergets/tt-scaper#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "mkdirp": "^1.0.4",
+    "pretty-ms": "^7.0.1",
+    "slugify": "^1.5.0",
+    "ttapi": "^4.0.1",
+    "youtube-dl-exec": "^1.2.0"
+  }
+}
